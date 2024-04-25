@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+}
+
+body {
+    background: url(images/BackGround.gif);
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-variant-caps: petite-caps;
+    padding: 50px;
+    font-weight: 900;
+}
+
+#site {
+    background-color: rgba(255, 255, 255, 0.347);
+    border: 5px rgba(255, 255, 255, 0.431) solid;
+    border-radius: 30px 0px 30px 0px;
+}
+
+#OldalTeto {
+    height: 20vw;
+    background-image: url(images/AI.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px 0px 0px 0px;
+    text-align: center;
+    padding : 3% 30%;
+    color: white;
+    font-size: 4vw;
+}
+
+.colored {
+    background: linear-gradient(90deg,#00dbd2,#fc00ff);
+    background-clip: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#Foszoveg {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+}
+
+#FoCaption, #FoCaptionName {
+    font-size: 40%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 25vw; 
+    margin: 0% 15%;
+}
+
+#FoCaptionName {
+    border-radius: 0px 0px 50px 50px;
+}
+
+#FoCaption {
+    border-radius: 50px 50px 0px 0px;
+}
+
+.buttonTop ,.buttonBottom {
+    border: double 5px black ;
+    padding: 20px;
+    text-align: center;
+    font-size: 2vw;
+    float: center;
+}
+
+.buttonTop {
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: solid black 2.5px;
+    background-color: rgba(0, 129, 32, 0.7);
+    margin-top: 30px;
+}
+
+.buttonBottom {
+    border-radius: 0px 0px 20px 20px;
+    border-top: solid black 2.5px;
+    background-color: rgba(58, 87, 255, 0.7);
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.buttonTop:hover {
+    background-color: rgba(0, 87, 22, 0.9);
+    border-radius: 20px;
+}
+
+.buttonBottom:hover {
+    background-color: rgba(28, 62, 255, 0.9);
+    border-radius: 20px;
+}
+
+.MainButtons {
+    width: 40vw;
+    margin: auto;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    transition-duration: 100ms;
+}
+
+#kisLeiras {
+    margin: auto;
+    position: relative;
+    margin-top: 20px ;
+    background: linear-gradient(180deg,#eaff00,#ff0000);
+    border: 3px solid black;
+    color: black;
+    border-radius: 30px;
+    padding: 30px;
+    justify-content: center;
+    width: 70vw;
+}
+
+.leirasSzoveg {
+    font-size: 1.3em;
+    color: rgb(65, 0, 0);
+    text-align: center;
+}
+
+.warning {
+    font-size: 5.3em;
+    justify-content: center;    
+}
+
+.voice {
+    border: black solid 5px;
+    border-radius: 0px 20px 20px 0px ;
+    font-size: larger;
+    width: 45vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    margin-top: 100px;
+    padding :0px;
+    opacity: 0;
+    transform: translateX(200px);
+    animation: float-and-fade-in 1s ease-in-out forwards;
+  }
+  
+  @keyframes float-and-fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(200);
+    }
+  }
+
+.voice.animate {
+    animation: float-and-fade-in 1s ease-in-out forwards;
+}  
+
+.kisdoboz {
+    background-image: url(images/voice.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.keyboard {
+    border: black solid 5px;
+    border-radius: 20px 0px 0px 20px ;
+    font-size: larger;
+    width: 45vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    margin-top: 100px;
+    padding :0px;
+
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: float-and-fade-in 1s ease-in-out forwards;
+  }
+  
+  @keyframes float-and-fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(200);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.keyboard.animate {
+    animation: float-and-fade-in 1s ease-in-out forwards;
+}  
+
+.kisdoboz2 {
+    background-image: url(images/voice.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.jobbra {
+    display: flex;
+    justify-content: flex-end;
+}
+.fejlec{
+    margin: auto;
+    margin-top: 10px ;
+    background: linear-gradient(90deg, #02183d 0%,#032f7b 25%, #00dbd2 50%,#032f7b 75% ,#02183d 100%);
+    color: black;
+    border: 3px solid black;
+    border-radius: 0px 0px 30px 0px;
+    padding: 3px;
+    text-align: center;
+}
+.headerButtons{
+    width: 3vw;
+    height: 3vw;
+    border-color: white;
+}
+.show {display:block;}
+#commandDiv {
+    display: none;
+    position: absolute;
+    background-color: rgb(28, 28, 28);
+    border-radius: 0px 0px 10px 10px;
+    border: black solid 3px;
+    height: 50vw;
+    width: 30vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 33%;
+    z-index: 1;
+    overflow:auto; 
+}
+#newsDiv{
+    display: none;
+    position: absolute;
+    border: black solid 3px;
+    background-color: rgb(28, 28, 28);
+    border-radius: 0px 0px 10px 10px;
+    height: 50vw;
+    width: 30vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 38%;
+    z-index: 1;
+    overflow:auto; 
+}
